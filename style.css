@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: rgb(26, 23, 23);
+    font-family: 'Do Hyeon', sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+header {
+    margin: auto;
+    background-color: black;
+    height: 60px;
+    -webkit-user-select: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+   
+    
+}
+header h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    transition: 800ms;
+}
+header h1:hover {
+    word-spacing: 10px;
+    color: yellow;
+
+}
+
+header img {
+    width: 45px;
+    height: 45px;
+}
+
+header a {
+    margin: auto 0;
+}
+
+header a:hover {
+    border-radius: 20px;
+}
+
+
+div#midpanel {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+div #score {
+    align-content: center;
+    background-color: white;
+    max-width: 450px;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    transition: 500ms;
+}
+
+div #score:hover {
+    box-shadow: 0px 0px 4px 4px white;
+}
+div#score .score-title {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+div.score-total {
+    margin: 0;
+    display: flex;
+
+}
+div#score .score-total .p1 {
+    width: 225px;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+div#score .score-total .p2 {
+    width: 225px;
+    text-align: center;
+
+}
+
+p.currentp {
+    color: white;
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    -webkit-user-select: none;
+    transition: 800ms;
+    margin: 0;
+}
+p.currentp:hover {
+    color: yellow;
+}
+
+div#game {
+    width: 80%;
+    background-color: black;
+    height: 400px;
+    max-width: 450px;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid white;
+    border-radius: 20px;
+    transition: 500ms;
+}
+div#game:hover {
+    box-shadow: 0px 0px 4px 4px white;
+}
+
+div#game div {
+    height: 110px;
+    min-width: 120px;
+    margin: auto auto;
+    background-color: white;
+    cursor: -webkit-grab;
+    border-radius: 5px; 
+    
+
+}
+
+div#game div:hover {
+    transition: 500ms;
+    opacity: 110%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 4px white;
+
+}
+div#game div p {
+    font-size: 80px;
+    text-align: center;
+    margin-top: auto;
+    -webkit-user-select: none;
+    padding-top: 5px;
+    color: black;
+    text-shadow: 1px 1px 2px yellow;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/indoor-games-1/32/Game_entertainment_fun_tictactoe_tic_tac_toe-512.png">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <a href="https://github.com/axelaviloff" target="_blank"><img src="GitHub_Logo_White.png" alt=""></a>
+            <h1>TicTacToe</h1>
+        </header>
+        <div id="midpanel">
+            <p class="currentp">Player X</p>
+            <div id="game">
+                <div class="b0_0" onclick="play(0,0)"><p></p></div>
+                <div class="b0_1" onclick="play(0,1)"><p></p></div>
+                <div class="b0_2" onclick="play(0,2)"><p></p></div>
+                <div class="b1_0" onclick="play(1,0)"><p></p></div>
+                <div class="b1_1" onclick="play(1,1)"><p></p></div>
+                <div class="b1_2" onclick="play(1,2)"><p></p></div>
+                <div class="b2_0" onclick="play(2,0)"><p></p></div>
+                <div class="b2_1" onclick="play(2,1)"><p></p></div>
+                <div class="b2_2" onclick="play(2,2)"><p></p></div>
+            </div>
+            <div id="score">
+                <div class="score-title">
+                    <h1>Scoreboard</h1>
+                </div>
+                <div class="score-total">
+                    <div class="p1">
+                        <p>PLAYER X = ?</p>
+                    </div>
+                    <div class="p2">
+                        <p>PLAYER O = ?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
