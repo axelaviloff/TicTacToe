@@ -56,7 +56,7 @@ div #score {
     background-color: white;
     max-width: 450px;
     height: 100px;
-    margin: auto;
+    margin: 5px auto;
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 10px;
@@ -115,7 +115,7 @@ div#game {
     transition: 500ms;
 }
 div#game:hover {
-    box-shadow: 0px 0px 4px 4px white;
+    box-shadow: 0px 0px 3px 3px white;
 }
 
 div#game div {
@@ -123,17 +123,15 @@ div#game div {
     min-width: 120px;
     margin: auto auto;
     background-color: white;
+    border-radius: 4px;   
     cursor: -webkit-grab;
-    border-radius: 5px; 
-    
-
+ 
 }
 
 div#game div:hover {
     transition: 500ms;
-    opacity: 110%;
     border-radius: 10px;
-    box-shadow: 0px 0px 4px 4px white;
+    box-shadow: 0px 0px 2px 4px white;
 
 }
 div#game div p {
@@ -143,6 +141,5 @@ div#game div p {
     -webkit-user-select: none;
     padding-top: 5px;
     color: black;
-    text-shadow: 1px 1px 2px yellow;
 }
 

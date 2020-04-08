@@ -1,4 +1,5 @@
 var snd = new Audio("http://www.soundjay.com/button/button-20.wav");
+
 table = [];
 roundPlays = 1;
 player1p = 0
@@ -6,6 +7,14 @@ player2p = 0
 player1 = document.querySelector('.p1 p');
 player2 = document.querySelector('.p2 p');
 currentp = document.querySelector('p.currentp');
+
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor;
+}
 
 for (var x = 0; x <= 2; x++) {
     row = [];
@@ -84,11 +93,14 @@ function sleep (time) {
 
 function play(x, y) {
     snd.play();
+    random_bg_color();
     if (roundPlays % 2 == 1) {
         table[x][y].innerHTML = "X";
+
         
     } else {
         table[x][y].innerHTML = "O"
+
     }
     document.querySelector('div.b'+x+'_'+y).removeAttribute("onclick");
 
