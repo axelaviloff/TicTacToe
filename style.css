@@ -8,6 +8,8 @@ body {
     left: 0;
     right: 0;
 }
+
+
 header {
     margin: auto;
     background-color: black;
@@ -124,7 +126,8 @@ div#game div {
     margin: auto auto;
     background-color: white;
     border-radius: 4px;   
-    cursor: -webkit-grab;
+    cursor: pointer;
+    visibility: visible;
  
 }
 
@@ -141,5 +144,53 @@ div#game div p {
     -webkit-user-select: none;
     padding-top: 5px;
     color: black;
+}
+
+#modal {
+
+    background: black;
+    position: absolute;
+    top: 250px;
+    right: 20%;
+    left: 20%;
+    padding-bottom: 20px;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    opacity: 0.85;
+    transition: 400ms;
+}
+
+#modal.hide {
+    visibility: hidden;
+}
+
+#modal p {
+    -webkit-user-select: none;  
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    opacity: 1;
+    
+}
+
+#modal a {
+    color: black;
+    background-color: yellow;
+    opacity: 1;
+    max-height: 100px;
+    max-width: 150px;
+    font-size: 20px;
+    justify-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+
+}
+
+#modal a:hover {
+    background-color: black;
+    color: yellow;
 }
 
